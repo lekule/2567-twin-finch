@@ -252,7 +252,10 @@ width: 16.6%;
 .col-2-12 {
 	width: 35%;
 }
+.parent-col-10-12 { 
+	width: 80%;
 
+}
 
 
 @media screen and (max-width: 480px) {
