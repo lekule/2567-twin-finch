@@ -4,55 +4,165 @@
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 1.0 - Typography
-1.1 - Headings
-1.2 - Body Copy
-1.3 - Buttons
-1.4 - Forms
-1.5 - Lists
-1.6 - Tables
-
+	1.1 - Headings
+	1.2 - Body Copy
+	1.3 - Buttons
+	1.4 - Forms
+	1.5 - Lists
+	1.6 - Tables
 2.0 - Navigation Menus
-3.1 - Main Menu
-3.2 - Sub Menu
-3.3 - Footer Menu
-
+	2.1 - Main Menu
+	2.2 - Sub Menu
+	2.3 - Footer Menu
 3.0 - Content
-3.1 - Site Structure (Site Header, Advertisement, Site Footer)
-3.2 - Section Name
-
+	3.1 - Site Structure (Site Header, Advertisement, Site Footer)
+	3.2 - Section Name
+	3.3 - Section Name
 4.0 - Media
-
 5.0 - Utility
-5.1 - Background Colors
-5.2 - Text Colors
-5.3 - Text Sizes
-5.4 - Alignments
+	5.1 - Background Colors
+	5.2 - Text Colors
+	5.3 - Text Sizes
+	5.4 - Alignments
 --------------------------------------------------------------*/
 
+
 /*--------------------------------------------------------------
-WILL FIX THIS CSS LATER :)
+1.0 - TYPOGRAPHY
+-------------------------------------------------------------- */
+/*--------------------------------------------------------------
+1.1 - HEADINGS
 -------------------------------------------------------------- */
 
-#hero { 
- background: url(../img/lekule-hero-image.jpg) no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+h1 {
+	margin-top: -12px;
+}
+h2, h3 {
+	text-transform: uppercase;
+	text-align: center;
+}
+/*--------------------------------------------------------------
+1.2 - BODY COPY
+-------------------------------------------------------------- */
+#hero p {
+	color: white;
+	text-align: center;
+	margin-bottom: 180px;
+}
+blockquote {
+	margin-top: 50px;
+	text-align: center;
+}
+/*--------------------------------------------------------------
+1.3 - BUTTONS
+-------------------------------------------------------------- */
+.button {
+	background-color: #ee576b;
+	color: white;
+}
+/*--------------------------------------------------------------
+1.4 - FORMS
+-------------------------------------------------------------- */
+label {
+	display: none;
+}
+
+form { 
+	padding: 30px;
+}
+
+input { 
+width: 131px;
+
+}
+
+/*--------------------------------------------------------------
+1.5 - LISTS
+-------------------------------------------------------------- */
+ul {
+	text-align: right;
+	margin-top: 42px;
+}
+li {
+	display: inline-block;
+	padding-right: 30px;
+}
+/*--------------------------------------------------------------
+2.0 - NAVIGATION MENUS
+-------------------------------------------------------------- */
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+}
+/*--------------------------------------------------------------
+4.0 - MEDIA
+-------------------------------------------------------------- */
+#hero {
+	background: url(../img/lekule-hero-image.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-top: 290px;
+	margin-top: -50px;
+}
+
+#featured-coffee { 
+background: url(../img/lekule-evening-oak.jpg) no-repeat center center;
+	background-size: cover;
+	min-height: 460px;
+
+}
+#about-pic { 
+background: url(../img/lekule-aboutus.jpg) no-repeat center center;
+	background-size: cover;
+
+
+}
+#map { 
+background: url(../img/lekule-map.jpg) no-repeat center center;
+	background-size: cover;
+
 }
 
 
 
-.grey-bar { 
-background-color: #d8d8d8;
-height: 50px;
+/*--------------------------------------------------------------
+5.0 - UTILITY
+-------------------------------------------------------------- */
+
+.grey-bar {
+	background-color: #d8d8d8;
+	height: 130px;
+}
+.pink-box {
+	background-color: #f95a6c;
+}
+footer {
+	background-color: #d8d8d8;
+}
+.flex { 
+display: -webkit-flex;
+display: -ms-flex;
+display: flex;
+overflow: hidden;
 
 }
 
-.btn { 
-background-color: #ee576b;
-color: white;
 
+.flex [class*='col-'] {
+	flex: 1;
+}
+
+
+
+/*--------------------------------------------------------------
+5.4 - ALIGNMENTS
+-------------------------------------------------------------- */
+
+#contact p {
+	text-align: center;
 }
 
 
@@ -69,57 +179,12 @@ color: white;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.col-5-8, .parent-col-10-12 {
+	margin-right: 0 auto;
+}
+.col-5-8 {
+	text-align: center;
+}
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -134,8 +199,7 @@ img {
 	width: 80%;
 	margin: 0 auto;
 }
-.row {
-}
+
 .row:after {
 	content: "";
 	display: table;
@@ -143,12 +207,9 @@ img {
 }
 [class*='col-'] {
 	float: left;
-	padding-right: 20px;
 	margin-bottom: 20px;
 }
-[class*='col-']:last-of-type {
-	padding-right: 0;
-}
+
 .bg {
 	background-color: #660033;
 	height: 200px;
@@ -167,6 +228,8 @@ img {
 }
 .col-1-4 {
 	width: 25%;
+	text-align: center;
+	padding-right: 20px;
 }
 .col-3-4 {
 	width: 75%;
@@ -180,11 +243,9 @@ img {
 .col-3-5 {
 	width: 50%;
 }
-.col-1-6 { 
-width: 16.6%;
-
+.col-1-6 {
+	width: 16.6%;
 }
-
 .col-4-6 {
 	width: 65%;
 }
@@ -239,7 +300,6 @@ width: 16.6%;
 .col-3-11 {
 	width: 20.5%;
 }
-
 .col-1-12 {
 	width: 8.33%;
 }
@@ -252,33 +312,28 @@ width: 16.6%;
 .col-2-12 {
 	width: 35%;
 }
-.parent-col-10-12 { 
+.col-10-12 {
 	width: 80%;
-
 }
-
+.block-center {
+	margin: 0 auto;
+	float: none;
+}
 
 @media screen and (max-width: 480px) {
 .col-1-4 {
 	width: 50%;
 }
-.col-1-4:nth-child(2) { 
-
-padding-right: 0;
-
+.col-1-4:nth-child(2) {
+	padding-right: 0;
 }
-.col-3-4 { 
+.col-3-4 {
 	width: 50%;
-
-
 }
-
-
 .col-1-5 {
 	width: 100%;
 	padding-right: 0;
 }
-
 .col-2-5 {
 	width: 30%;
 }
@@ -288,18 +343,14 @@ padding-right: 0;
 .col-1-6 {
 	width: 33.33%;
 }
-
 .col-1-7 {
 	width: 100%;
 }
-
-
 .col-1-8 {
 	width: 25%;
 }
-.col-1-8:nth-child(4), .col-1-7, .col-1-5, .col-1-6:nth-child(3), .col-1-10, .col-1-9:nth-child(3), .col-1-9:nth-child(6)  { 
-
-padding-right: 0;
+.col-1-8:nth-child(4), .col-1-7, .col-1-5, .col-1-6:nth-child(3), .col-1-10, .col-1-9:nth-child(3), .col-1-9:nth-child(6) {
+	padding-right: 0;
 }
 .col-1-9 {
 	width: 33.3%;
@@ -307,10 +358,98 @@ padding-right: 0;
 .col-1-10 {
 	width: 50%;
 }
+
 .col-1-11 {
 	width: 100%;
 }
 .col-1-12 {
 	width: 33.33%;
 }
+
+.col-10-12 { 
+	width: 100%;
 }
+.grey-bar {
+	display: none;	
+}
+
+.col-1-3 { 
+	width: 100%;
+}
+
+.col-2-3 { 
+	width: 50%;
+
+}
+ul { 
+text-align: center;
+
+}
+h1 { 
+	align-content: center;
+
+}
+#featured-coffee { 
+background: url(../img/lekule-evening-oak.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#about-pic { 
+background: url(../img/lekule-aboutus.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+#about-pic { 
+background: url(../img/lekule-aboutus.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+#map { 
+background:url(../img/lekule-map.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#twitter {
+	background: url(../img/lekule-twitter.png) no-repeat center center;
+	
+}
+
+#linkedin {
+	background:url(../img/lekule-linkedin.png) no-repeat center center;	
+}
+#facebook {
+	background: url(../img/lekule-facebook.png) no-repeat center center;	
+}
+
+#contact .col-1-2 { 
+width: 100%;
+}
+
+
+ textarea, input { 
+
+width: 200px;
+
+}
+.wrapper { 
+width: 100%;
+
+}
+.one-hundred { 
+
+width: 100%;
+}
+
+}
+
