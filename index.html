@@ -3,8 +3,8 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=devide-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,800" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,800" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script>
@@ -19,7 +19,7 @@
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
-    <title>Twinfinch</title>
+    <title>Twinfinch Roastery</title>
     </head>
 
     <body>
@@ -31,7 +31,7 @@
       </header>
         </div>
     <nav class="col-2-3">
-          <ul>
+          <ul id="smooth-scroll">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#products">Products</a></li>
@@ -44,10 +44,10 @@
       <div class="wrapper">
     <div class="row">
           <div class="col-5-8">
-        <p>Twin Finch Roastery is an authentic micro-roastery; small, <br>
-              dedicated, and highly focused on quality. We have a <br>
-              constantly evolving, handpicked selection of fine coffee <br>
-              origins and delicious blends engineered to help you brew <br>
+        <p>Twin Finch Roastery is an authentic micro-roastery; small, 
+              dedicated, and highly focused on quality. We have a 
+              constantly evolving, handpicked selection of fine coffee 
+              origins and delicious blends engineered to help you brew 
               a cafe-quality cup at home.</p>
       </div>
         </div>
@@ -61,7 +61,7 @@
   </div>
     </div>
 <div class="parent-div">
-      <div class="grey-bar"></div>
+      <div id="grey-bar-one"></div>
       <div id="products" class="wrapper">
     <div class="row">
           <div class="col-10-12 block-center">
@@ -76,7 +76,7 @@
                   <p>Medium-Dark/$19.95</p>
                 </header>
             <p>Our featured roast of the season. Pungently rich and complex with hints of night-blooming flowers and coriander in aroma and cup.</p>
-            <p class="button"><a href="https://www.paypal.com/home">Pay On Paypal</a></p>
+            <p><a href="https://www.paypal.com/home">Pay On Paypal</a></p>
           </div>
             </div>
       </div>
@@ -85,7 +85,7 @@
     </div>
 
 <div class="parent-div">
-      <div class="grey-bar"></div>
+      <div id="grey-bar-two"></div>
       <div class="wrapper">
     <div class="row">
           <section class="col-1-4"> <img src="img/lekule-sunrise.png" alt="sunrise">
@@ -94,8 +94,8 @@
               <p>Light/$17.95</p>
               <p>La Chiapas, Mexico</p>
             </header>
-        <p class="margin-bottom">Light, fruity acidity which complements its fully nutty body and unique spicy tones.</p>
-        <p class="button"><a href="https://www.paypal.com/home">Pay On Paypal</a></p>
+        <p class="margin-bottom">Light, fruity which complements its fully nutty body and unique spicy tones.</p>
+        <p><a href="https://www.paypal.com/home">Pay On Paypal</a></p>
       </section>
           <section class="col-1-4"> <img src="img/lekule-houseblend.png" alt="houseblend">
         <header>
@@ -103,8 +103,8 @@
               <p>Medium/$17.95</p>
               <p>Cajamarca &amp; Mbamba Regions Peru</p>
             </header>
-        <p class="margin-bottom">Light, fruity acidity which complements its fully nutty body and unique spicy tones.</p>
-        <p class="button"><a href="https://www.paypal.com/home">Pay On Paypal</a></p>
+        <p class="margin-bottom">Light, fruity which complements its fully nutty body and unique spicy tones.</p>
+        <p><a href="https://www.paypal.com/home">Pay On Paypal</a></p>
       </section>
           <section class="col-1-4"> <img src="img/lekule-espresso.png" alt="espresso">
         <header>
@@ -113,7 +113,7 @@
               <p>Latin America, Africa &amp; Indonesia</p>
             </header>
         <p class="margin-bottom">Clean, a little roasty, sumptuous crema, unfussy, delicious.</p>
-        <p class="button"><a href="https://www.paypal.com/home">Pay On Paypal</a></p>
+        <p><a href="https://www.paypal.com/home">Pay On Paypal</a></p>
       </section>
           <section class="col-1-4"> <img src="img/lekule-midnight.png" alt="midnight">
         <header>
@@ -122,7 +122,7 @@
               <p>Latin America</p>
             </header>
         <p class="margin-bottom">Roasted into second crack for a big, bold and dark cup. Beans display oil.</p>
-        <p class="button"><a href="https://www.paypal.com/home">Pay On Paypal</a></p>
+        <p><a href="https://www.paypal.com/home">Pay On Paypal</a></p>
       </section>
         </div>
   </div>
@@ -136,7 +136,7 @@
   </div>
     </section>
 <div class="parent-div">
-      <div class="grey-bar"></div>
+      <div id="grey-bar-three"></div>
       <section id="about" class="wrapper">
     <div class="row">
           <header>
@@ -165,11 +165,11 @@
         <input type="text" name="email" placeholder="Email Address" id="email"/>
       </form>
         </div>
-    <p class="button col-2-6"><a href="#">Sign Up</a></p>
+    <p class="col-2-6"><a href="#">Sign Up</a></p>
   </div>
     </section>
 <div class="parent-div">
-      <div class="grey-bar"></div>
+      <div id="grey-bar-four"></div>
       <section id="contact" class="wrapper" >
     <div class="row">
           <header>
@@ -184,7 +184,7 @@
             <label for="emailaddress">Email Address</label>
             <input type="text" name="emailaddress" placeholder="Email Address" id="emailaddress"/>
             <textarea name="comment" rows="4" cols="45" placeholder="Message"></textarea>
-            <p class="button"><a href="#">Submit</a></p>
+            <p><a href="#">Submit</a></p>
           </form>
               <div id="map" class="col-1-2"></div>
             </div>
@@ -204,6 +204,7 @@
         </div>
   </div>
     </footer>
+    
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
 <script>
 jQuery(document).ready(function($){
@@ -227,6 +228,31 @@ jQuery(document).ready(function($){
 		
 		});
 
+	
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+<script>
+jQuery(document).ready(function($){
+	
+	// Smooth scroll home nav
+		$('#smooth-scroll').on('click', 'a', function(e) {
+			// prevent default anchor click behavior
+   			e.preventDefault();
+		
+		   // store hash
+		   var hash = this.hash;
+			
+			$('html, body').animate({
+			   scrollTop: $(this.hash).offset().top-0
+			 }, 100, function(){
+		
+			   // when done, add hash to url
+			   // (default click behaviour)
+			   window.location.hash = hash;
+			 });
+		
+		});
 	
 });
 </script>

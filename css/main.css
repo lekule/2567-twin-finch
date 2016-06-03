@@ -25,12 +25,16 @@
 	5.3 - Text Sizes
 	5.4 - Alignments
 --------------------------------------------------------------*/
-html {
-	font-size: 24px;
-}
+
 /*--------------------------------------------------------------
 1.0 - TYPOGRAPHY
 -------------------------------------------------------------- */
+html {
+	font-size: 24px;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+}
 /*--------------------------------------------------------------
 1.1 - HEADINGS
 -------------------------------------------------------------- */
@@ -39,96 +43,76 @@ h1 {
 	margin-top: -12px;
 }
 h2, h3 {
+	font-size: 1.5rem;
+}
+a, h2, h3, #hero p, blockquote, .pink-box header p, #shipping {
 	text-transform: uppercase;
+}
+h2, h3, blockquote, .pink-box, #contact p, .col-5-8, .col-1-4 {
 	text-align: center;
-	font-weight: 800;
+}
+h2, h3, .col-1-4 header p, .col-2-6 a, .col-1-4 a {
 	color: #ee576b;
-	font-size: 35px;
+}
+h2, h3, #hero p, nav a:hover, blockquote a:hover, .col-1-4 h3 {
+	font-weight: 800;
+}
+#hero p, .pink-box, .pink-box h3, .pink-box a, .pink-box a:hover, .col-1-4 a:hover, .col-2-6 a:hover {
+	color: whitesmoke;
 }
 /*--------------------------------------------------------------
 1.2 - BODY COPY
 -------------------------------------------------------------- */
 #hero p {
-	color: white;
 	text-align: left;
-	text-transform: uppercase;
-	font-weight: 800;
 }
 blockquote {
-	margin-top: 50px;
-	text-align: center;
-	text-transform: uppercase;
+	margin: 80px 0 80px;
 	font-size: 0.5rem;
+}
+.margin-bottom {
+	margin-bottom: 50px;
+}
+blockquote, .pink-box p, .pink-box h3, .col-1-4, .pink-box header p, #shipping {
 	font-weight: 100;
-	margin-bottom: 50px;
-}
-
-
-
-
-
-
-.margin-bottom { 
-	margin-bottom: 50px;
-}
-body {
-	font-family: 'Open Sans', sans-serif;
 }
 .pink-box p {
-	font-weight: 100;
-	font-size: 0.6rem;
-	padding: 30px;
-	line-height: 25px;
+	padding: 40px 45px;
+	line-height: 1rem;
 	margin-top: -65px;
-	padding-bottom: 60px;
-}
-.pink-box {
-	color: white;
 }
 .pink-box h3 {
-	color: whitesmoke;
-	font-size: 1rem;
 	padding-top: 80px;
-	font-weight: 100;
 }
-.col-1-4 header p {
-	color: #f95a6c;
+.col-1-4 header p, .col-1-4, #contact p, .pink-box p {
 	font-size: 0.6rem;
-}
-.col-1-4 {
-	font-size: 0.6rem;
-	font-weight: 100;
 }
 .col-1-4 p, .col-1-4 {
 	margin-top: -7px;
 }
 .col-1-4 h3 {
 	color: black;
-	font-weight: 500;
 	font-size: 0.8rem;
 	margin-top: -10px;
 }
-.pink-box header p {
+.pink-box header p, .pink-box h3 {
 	font-size: 1rem;
-	text-transform: uppercase;
-	font-weight: 100;
+}
+.pink-box header p {
 	margin-top: -50px;
 	padding-bottom: 35px;
 }
 .pink-box a {
-	color: white;
 	border: solid 1px white;
 	padding: 10px 28px;
 }
 .pink-box a:hover {
 	background-color: #f95a6c;
-	color: white;
 }
 #shipping {
-	text-transform: uppercase;
 	font-size: 0.5rem;
-	font-weight: 100;
 	line-height: 25px;
+	margin: 60px 0 60px;
 }
 #about p {
 	padding-top: 120px;
@@ -153,42 +137,49 @@ form {
 	font-size: 0.7rem;
 	height: 39px;
 }
-
-input:focus {outline:none;}
-
-
-input:-webkit-autofill {
+input:focus {
+	outline: none;
+}
+ input:-webkit-autofill {
  -webkit-box-shadow: 0 0 0px 1000px white inset;
  box-shadow: 0 0 0px 1000px white inset;
 }
 .col-2-6 a {
-	color: #f95a6c;
 	border: solid 1px #f95a6c;
 	padding: 7px 24px;
 	font-size: 0.7rem;
 	margin-left: -52px;
 }
-.col-4-6 form { 
-margin-left: 210px;
+.col-4-6 form {
+	margin-left: 210px;
 }
-
-#contact p { 
-    font-size: 0.6rem;
-
-}
-
-#contact input, textarea { 
-	width: 400px;
+#contact input, textarea {
+	width: 100%;
 	margin-bottom: 10px;
 	font-size: 0.6rem;
 	border: solid 1px white;
 	background-color: transparent;
-
+}
+textarea {
+	margin-bottom: 50px;
 }
 
 
+::-webkit-input-placeholder {
+ color: white;
+}
 
+:-moz-placeholder { /* Firefox 18- */
+ color: white;
+}
 
+::-moz-placeholder {  /* Firefox 19+ */
+ color: white;
+}
+
+:-ms-input-placeholder {
+ color: white;
+}
 /*--------------------------------------------------------------
 1.5 - LISTS
 -------------------------------------------------------------- */
@@ -206,22 +197,21 @@ li {
 -------------------------------------------------------------- */
 a {
 	text-decoration: none;
-	text-transform: uppercase;
 	color: black;
 	font-weight: 100;
 }
 nav a:hover, blockquote a:hover {
 	border-bottom: 1px solid #f95a6c;
-	font-weight: 800;
 }
 .col-1-4 a {
-	color: #f95a6c;
 	border: solid 1px #f95a6c;
 	padding: 10px 28px;
 }
-.col-1-4 a:hover, .col-2-6 a:hover {
+.col-1-4 a:hover, .col-2-6 a:hover, .pink-box {
 	background-color: #f95a6c;
-	color: white;
+}
+.col-1-3 a {
+	font-size: 0.6rem;
 }
 /*--------------------------------------------------------------
 4.0 - MEDIA
@@ -231,35 +221,50 @@ nav a:hover, blockquote a:hover {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
-	padding-top: 293px;
+	padding-top: 380px;
 	margin-top: -77px;
 }
 #featured-coffee {
 	background: url(../img/lekule-evening-oak.jpg) no-repeat center center;
-	background-size: cover;
 	min-height: 460px;
 }
 #about-pic {
 	background: url(../img/lekule-aboutus.jpg) no-repeat center center;
+}
+#facebook {
+	background-image: url(../img/lekule-facebook.png);
+	height: 23px;
+	width: 25px;
+}
+#linkedin {
+	background-image: url(../img/lekule-linkedin.png);
+	height: 23px;
+	width: 25px;
+}
+#hero, #featured-coffee, #about-pic {
 	background-size: cover;
 }
-
+#facebook, #linkedin, #twitter {
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	display: inline-block;
+}
+#twitter {
+	background-image: url(../img/lekule-twitter.png);
+	height: 23px;
+	width: 25px;
+}
+#linkedin:hover, #twitter:hover, #facebook:hover {
+	background-position: 0 -22px;
+}
 /*--------------------------------------------------------------
 5.0 - UTILITY
 -------------------------------------------------------------- */
-
-.grey-bar {
-	background-color: #d8d8d8;
-	height: 130px;
+#products {
+	margin-bottom: 80px;
 }
-.pink-box {
-	background-color: #f95a6c;
-	text-align: center;
-	color: white;
-}
-footer {
-	background-color: #d8d8d8;
+footer, #grey-bar-one, #grey-bar-two, #grey-bar-three, #grey-bar-four {
+	background-color: #f1f2f2;
 }
 .flex {
 	display: -webkit-flex;
@@ -270,32 +275,36 @@ footer {
 .flex [class*='col-'] {
 	flex: 1;
 }
-
-.parent-div { 
+.parent-div {
 	position: relative;
 }
-
-
-.grey-bar { 
-
+#grey-bar-one, #grey-bar-two, #grey-bar-three, #grey-bar-four {
 	position: absolute;
-	top: 184px;
-	background-color: #d8d8d8;
-    height: 130px;
-    width: 100%;
-    z-index: -1;
-
+	z-index: -1;
+	width: 100%;
+	height: 115px;
 }
-
+#grey-bar-one {
+	top: 245px;
+}
+#grey-bar-two {
+	top: 168px;
+}
+#grey-bar-three {
+	top: 170px;
+}
+#grey-bar-four {
+	top: 215px;
+}
+.flex form a {
+	margin-left: 260px;
+}
 /*--------------------------------------------------------------
 5.4 - ALIGNMENTS
 -------------------------------------------------------------- */
 
 #contact p {
-	text-align: center;
-}
-.col-5-8 {
-	text-align: center;
+	padding-bottom: 30px;
 }
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
@@ -332,13 +341,14 @@ img {
 }
 .col-1-3 {
 	width: 33.33%;
+	padding-top: 28px;
 }
 .col-2-3 {
-	width: 66.66%;
+	width: 60%;
+	margin-top: -39px;
 }
 .col-1-4 {
 	width: 25%;
-	text-align: center;
 	padding-right: 20px;
 }
 .col-3-4 {
@@ -469,7 +479,7 @@ img {
 .col-1-10 {
 	width: 50%;
 }
-.col-1-11 {
+.col-1-11, .col-1-3 {
 	width: 100%;
 }
 .col-1-12 {
@@ -481,17 +491,9 @@ img {
 .grey-bar {
 	display: none;
 }
-.col-1-3 {
-	width: 100%;
-}
-.col-2-3 {
-	width: 50%;
-}
-ul {
-	text-align: center;
-}
-h1 {
-	align-content: center;
+
+footer .col-2-3 {
+	width: 81%;
 }
 #featured-coffee {
 	background: url(../img/lekule-evening-oak.jpg) no-repeat center center;
@@ -507,39 +509,57 @@ h1 {
 	-o-background-size: cover;
 	background-size: cover;
 }
-#about-pic {
-	background: url(../img/lekule-aboutus.jpg) no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-#map {
-	background: url(../img/lekule-map.jpg) no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-#twitter {
-	background: url(../img/lekule-twitter.png) no-repeat center center;
-}
-#linkedin {
-	background: url(../img/lekule-linkedin.png) no-repeat center center;
-}
-#facebook {
-	background: url(../img/lekule-facebook.png) no-repeat center center;
-}
 #contact .col-1-2 {
 	width: 100%;
 }
 textarea, input {
-	width: 200px;
+	width: 100%;
 }
 .wrapper {
 	width: 100%;
 }
-.one-hundred {
-	width: 100%;
+ul {
+	margin: -120px 0 100px 100px;
+}
+h1 {
+	margin: 0 0 100px 70px;
+}
+#hero {
+	background: url(../img/lekule-hero-image.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: contain;
+	margin-top: -160px;
+}
+#hero p {
+	font-size: 0.4rem;
+	margin: -140px 0 20px 0;
+	line-height: 12px;
+}
+nav li a {
+	font-size: 0.5rem;
+	text-align: center;
+}
+.pink-box h3 {
+	padding-top: 20px;
+}
+blockquote {
+	margin-top: -30px;
+}
+#grey-bar-one, #grey-bar-two, #grey-bar-three, #grey-bar-four {
+	display: none;
+}
+.col-4-6 form {
+	margin-left: -10px;
+}
+#contact .flex {
+	display: block;
+}
+#map {
+	height: 400px;
+}
+.flex form a {
+	margin-left: 170px;
 }
 }
