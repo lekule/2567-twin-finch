@@ -1,192 +1,234 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=devide-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="css/normalize.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,800" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<title>Twinfinch</title>
-</head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devide-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,800" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(45.536951, -122.649971),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <title>Twinfinch</title>
+    </head>
 
-<body>
+    <body>
 <div class="wrapper">
-  <div class="row">
+      <div class="row">
     <div class="col-1-3">
-      <header>
+          <header>
         <h1><a href="index.html"><img src="img/lekule-twinfinch-logo.png" alt="twinfinch-logo"></a></h1>
       </header>
-    </div>
+        </div>
     <nav class="col-2-3">
-      <ul>
+          <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#products">Products</a></li>
         <li><a href="#contact">contact</a></li>
       </ul>
-    </nav>
+        </nav>
   </div>
-</div>
+    </div>
 <div id="hero">
-  <div class="wrapper">
+      <div class="wrapper">
     <div class="row">
-      <div class="col-5-8">
+          <div class="col-5-8">
         <p>Twin Finch Roastery is an authentic micro-roastery; small, <br>
-dedicated, and highly focused on quality. We have a <br>
-constantly evolving, handpicked selection of fine coffee <br>
-origins and delicious blends engineered to help you brew <br>
-a cafe-quality cup at home.</p>
+              dedicated, and highly focused on quality. We have a <br>
+              constantly evolving, handpicked selection of fine coffee <br>
+              origins and delicious blends engineered to help you brew <br>
+              a cafe-quality cup at home.</p>
       </div>
-    </div>
+        </div>
   </div>
-</div>
+    </div>
 <div class="wrapper">
-  <div class="col-5-8 block-center">
+      <div class="col-5-8 block-center">
     <blockquote>
-      <p>This extraordinary coffee almost defies description with it's aromatic complexity of structure." <a href="http://www.coffeereview.com/">Coffee Review.com</a></p>
-    </blockquote>
+          <p>This extraordinary coffee almost defies description with it's aromatic complexity of structure." <a href="http://www.coffeereview.com/">Coffee Review.com</a></p>
+        </blockquote>
   </div>
-</div>
-<div class="parent-div">
-  <div class="grey-bar"></div>
-</div>
-<div id="products" class="wrapper">
-  <div class="row">
-    <div class="col-10-12 block-center">
-      <header>
-        <h2> Our products </h2>
-      </header>
-      <div class="row flex">
-        <div id="featured-coffee" class="col-1-2"></div>
-        <div class="col-1-2 pink-box">
-          <header>
-            <h3>Evening-Oak</h3>
-            <p>Medium-Dark/$19.95</p>
-          </header>
-          <p>Our featured roast of the season. Pungently rich and complex with hints of night-blooming flowers and coriander in aroma and cup.</p>
-          <p class="button"><a href="https://www.paypal.com/home">Pay On Paypal</a></p>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
 <div class="parent-div">
-  <div class="grey-bar"></div>
-</div>
-<div class="wrapper">
-  <div class="row">
-    <section class="col-1-4"> <img src="img/lekule-sunrise.png" alt="sunrise">
-      <header>
-        <h3>Sunrise</h3>
-        <p>Light/$17.95</p>
-        <p>La Chiapas, Mexico</p>
-      </header>
-      <p>Light, fruity acidity which complements its fully nutty body and unique spicy tones.</p>
-      <p class="button"><a href="https://www.paypal.com/home">Pay On Paypal</a></p>
-    </section>
-    <section class="col-1-4"> <img src="img/lekule-houseblend.png" alt="houseblend">
-      <header>
-        <h3>Houseblend</h3>
-        <p>Medium/$17.95</p>
-        <p>Cajamarca &amp; Mbamba Regions Peru</p>
-      </header>
-      <p>Light, fruity acidity which complements its fully nutty body and unique spicy tones.</p>
-      <p class="button"><a href="https://www.paypal.com/home">Pay On Paypal</a></p>
-    </section>
-    <section class="col-1-4"> <img src="img/lekule-espresso.png" alt="espresso">
-      <header>
-        <h3>Espresso</h3>
-        <p>Regular/$19.95</p>
-        <p>Latin America, Africa &amp; Indonesia</p>
-      </header>
-      <p>Clean, a little roasty, sumptuous crema, unfussy, delicious.</p>
-      <p class="button"><a href="https://www.paypal.com/home">Pay On Paypal</a></p>
-    </section>
-    <section class="col-1-4"> <img src="img/lekule-midnight.png" alt="midnight">
-      <header>
-        <h3>Midnight</h3>
-        <p>Dark/$19.95</p>
-        <p>Latin America</p>
-      </header>
-      <p>Roasted into second crack for a big, bold and dark cup. Beans display oil.</p>
-      <p class="button"><a href="https://www.paypal.com/home">Pay On Paypal</a></p>
-    </section>
+      <div class="grey-bar"></div>
+      <div id="products" class="wrapper">
+    <div class="row">
+          <div class="col-10-12 block-center">
+        <header>
+              <h2> Our products </h2>
+            </header>
+        <div class="row flex">
+              <div id="featured-coffee" class="col-1-2"></div>
+              <div class="col-1-2 pink-box">
+            <header>
+                  <h3>Evening-Oak</h3>
+                  <p>Medium-Dark/$19.95</p>
+                </header>
+            <p>Our featured roast of the season. Pungently rich and complex with hints of night-blooming flowers and coriander in aroma and cup.</p>
+            <p class="button"><a href="https://www.paypal.com/home">Pay On Paypal</a></p>
+          </div>
+            </div>
+      </div>
+        </div>
   </div>
-</div>
+    </div>
+
+<div class="parent-div">
+      <div class="grey-bar"></div>
+      <div class="wrapper">
+    <div class="row">
+          <section class="col-1-4"> <img src="img/lekule-sunrise.png" alt="sunrise">
+        <header>
+              <h3>Sunrise</h3>
+              <p>Light/$17.95</p>
+              <p>La Chiapas, Mexico</p>
+            </header>
+        <p class="margin-bottom">Light, fruity acidity which complements its fully nutty body and unique spicy tones.</p>
+        <p class="button"><a href="https://www.paypal.com/home">Pay On Paypal</a></p>
+      </section>
+          <section class="col-1-4"> <img src="img/lekule-houseblend.png" alt="houseblend">
+        <header>
+              <h3>Houseblend</h3>
+              <p>Medium/$17.95</p>
+              <p>Cajamarca &amp; Mbamba Regions Peru</p>
+            </header>
+        <p class="margin-bottom">Light, fruity acidity which complements its fully nutty body and unique spicy tones.</p>
+        <p class="button"><a href="https://www.paypal.com/home">Pay On Paypal</a></p>
+      </section>
+          <section class="col-1-4"> <img src="img/lekule-espresso.png" alt="espresso">
+        <header>
+              <h3>Espresso</h3>
+              <p>Regular/$19.95</p>
+              <p>Latin America, Africa &amp; Indonesia</p>
+            </header>
+        <p class="margin-bottom">Clean, a little roasty, sumptuous crema, unfussy, delicious.</p>
+        <p class="button"><a href="https://www.paypal.com/home">Pay On Paypal</a></p>
+      </section>
+          <section class="col-1-4"> <img src="img/lekule-midnight.png" alt="midnight">
+        <header>
+              <h3>Midnight</h3>
+              <p>Dark/$19.95</p>
+              <p>Latin America</p>
+            </header>
+        <p class="margin-bottom">Roasted into second crack for a big, bold and dark cup. Beans display oil.</p>
+        <p class="button"><a href="https://www.paypal.com/home">Pay On Paypal</a></p>
+      </section>
+        </div>
+  </div>
+    </div>
+
 <section class="wrapper">
-  <div class="row">
+      <div class="row">
     <div class="col-5-8 block-center">
-      <p id="shipping"> Online orders usually ship quickly and arrive within three business days. We only ship the freshest coffee and your satisfaction is guaranteed. Our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a batch hits the roaster. We only ship whole bean, but will grind for you in-store per request. </p>
-    </div>
-  </div>
-</section>
-<div class="parent-div">
-  <div class="grey-bar"></div>
-</div>
-<section id="about" class="wrapper">
-  <div class="row">
-    <header>
-      <h2> About us </h2>
-    </header>
-    <div class="col-10-12 block-center">
-      <div class="row flex">
-        <div id="about-pic" class="col-1-2 no-padding-right"></div>
-        <div class="col-1-2 pink-box">
-          <p>Our coffee is roasted in a hot air, refractory lined roaster with an extraordinary level of control. The significance of relying on a high volume of hot air to roast coffee beans can't be understated. Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting environment. </p>
+          <p id="shipping"> Online orders usually ship quickly and arrive within three business days. We only ship the freshest coffee and your satisfaction is guaranteed. Our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a batch hits the roaster. We only ship whole bean, but will grind for you in-store per request. </p>
         </div>
-      </div>
-    </div>
   </div>
-</section>
+    </section>
+<div class="parent-div">
+      <div class="grey-bar"></div>
+      <section id="about" class="wrapper">
+    <div class="row">
+          <header>
+        <h2> About us </h2>
+      </header>
+          <div class="col-10-12 block-center">
+        <div class="row flex">
+              <div id="about-pic" class="col-1-2 no-padding-right"></div>
+              <div class="col-1-2 pink-box">
+            <p>Our coffee is roasted in a hot air, refractory lined roaster with an extraordinary level of control. The significance of relying on a high volume of hot air to roast coffee beans can't be understated. Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting environment. </p>
+          </div>
+            </div>
+      </div>
+        </div>
+  </section>
+    </div>
+
 <section class="wrapper">
-  <div class="row">
+      <div class="row">
     <header>
-      <h2>Newsletter Signup</h2>
-    </header>
+          <h2>Newsletter Signup</h2>
+        </header>
     <div class="col-4-6">
-      <form >
+          <form >
         <label for="email">Email Address</label>
         <input type="text" name="email" placeholder="Email Address" id="email"/>
       </form>
-    </div>
+        </div>
     <p class="button col-2-6"><a href="#">Sign Up</a></p>
   </div>
-</section>
+    </section>
 <div class="parent-div">
-  <div class="grey-bar"></div>
-</div>
-<section id="contact" class="wrapper" >
-  <div class="row">
-    <header>
-      <h2>Contact</h2>
-    </header>
-    <p>You can buy from us directly at our Portland storefront located at 457 NW Market Street.</p>
-    <div class="col-10-12 block-center one-hundred">
-      <div class="row flex">
-        <form class="col-1-2 pink-box">
-          <label for="firstname">First-name</label>
-          <input type="text" name="firstname" placeholder="First Name" id="firstname"/>
-          <label for="emailaddress">Email Address</label>
-          <input type="text" name="emailaddress" placeholder="Email Address" id="emailaddress"/>
-          <textarea name="comment" rows="4" cols="45" placeholder="Message"></textarea>
-          <p class="button"><a href="#">Submit</a></p>
-        </form>
-        <div id="map" class="col-1-2"></div>
-      </div>
-    </div>
-  </div>
-</section>
-<footer>
-  <div class="wrapper">
+      <div class="grey-bar"></div>
+      <section id="contact" class="wrapper" >
     <div class="row">
-      <div class="col-1-3"><a href="index.html">Twinfinch</a></div>
-      <ul class="col-2-3">
+          <header>
+        <h2>Contact</h2>
+      </header>
+          <p>You can buy from us directly at our Portland storefront located at 457 NW Market Street.</p>
+          <div class="col-10-12 block-center one-hundred">
+        <div class="row flex">
+              <form class="col-1-2 pink-box">
+            <label for="firstname">First-name</label>
+            <input type="text" name="firstname" placeholder="First Name" id="firstname"/>
+            <label for="emailaddress">Email Address</label>
+            <input type="text" name="emailaddress" placeholder="Email Address" id="emailaddress"/>
+            <textarea name="comment" rows="4" cols="45" placeholder="Message"></textarea>
+            <p class="button"><a href="#">Submit</a></p>
+          </form>
+              <div id="map" class="col-1-2"></div>
+            </div>
+      </div>
+        </div>
+  </section>
+    </div>
+<footer>
+      <div class="wrapper">
+    <div class="row">
+          <div class="col-1-3"><a href="index.html">Twinfinch</a></div>
+          <ul class="col-2-3">
         <li><a href="https://www.facebook.com/" target="_blank" id="facebook"></a></li>
         <li><a href="https://twitter.com/?lang=en" target="_blank" id="twitter"></a></li>
         <li><a href="https://www.linkedin.com/" target="_blank" id="linkedin"></a></li>
       </ul>
-    </div>
+        </div>
   </div>
-</footer>
+    </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+<script>
+jQuery(document).ready(function($){
+	
+	// Smooth scroll home nav
+		$('#smooth-scroll').on('click', 'a', function(e) {
+			// prevent default anchor click behavior
+   			e.preventDefault();
+		
+		   // store hash
+		   var hash = this.hash;
+			
+			$('html, body').animate({
+			   scrollTop: $(this.hash).offset().top-0
+			 }, 500, function(){
+		
+			   // when done, add hash to url
+			   // (default click behaviour)
+			   window.location.hash = hash;
+			 });
+		
+		});
+
+	
+});
+</script>
 </body>
 </html>
