@@ -1,30 +1,29 @@
 @charset "UTF-8";
 /* CSS Document */
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 1.0 - Typography
-	1.1 - Headings
-	1.2 - Body Copy
-	1.3 - Buttons
-	1.4 - Forms
-	1.5 - Lists
-	1.6 - Tables
-2.0 - Navigation Menus
-	2.1 - Main Menu
-	2.2 - Sub Menu
-	2.3 - Footer Menu 
+1.1 - Headings
+1.2 - Body Copy
+1.3 - Buttons
+1.4 - Forms
+1.5 - Lists
+
+2.0 - Navigation Menus	
+2.1 - Main Menu
+2.2 - Footer Menu
+
 3.0 - Content
-	3.1 - Site Structure (Site Header, Advertisement, Site Footer)
-	3.2 - Section Name
-	3.3 - Section Name
+3.1 - Site Structure (Site Header, Advertisement, Site Footer)
+3.2 - Text Utility
+
 4.0 - Media
+
 5.0 - Utility
-	5.1 - Background Colors
-	5.2 - Text Colors
-	5.3 - Text Sizes
-	5.4 - Alignments
 --------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------
 1.0 - TYPOGRAPHY
@@ -38,43 +37,23 @@ body {
 /*--------------------------------------------------------------
 1.1 - HEADINGS
 -------------------------------------------------------------- */
-
-h1 {
-	margin-top: -12px;
-}
 h2, h3 {
 	font-size: 1.5rem;
 }
-a, h2, h3, #hero p, blockquote, .pink-box header p, #shipping {
-	text-transform: uppercase;
-}
-h2, h3, blockquote, .pink-box, #contact p, .col-5-8, .col-1-4 {
-	text-align: center;
-}
-h2, h3, .col-1-4 header p, .col-2-6 a, .col-1-4 a {
-	color: #ee576b;
-}
-h2, h3, #hero p, nav a:hover, blockquote a:hover, .col-1-4 h3 {
-	font-weight: 800;
-}
-#hero p, .pink-box, .pink-box h3, .pink-box a, .pink-box a:hover, .col-1-4 a:hover, .col-2-6 a:hover {
-	color: whitesmoke;
+.col-1-4 h3 {
+	color: black;
+	font-size: 0.8rem;
+	margin-top: -35px;
 }
 /*--------------------------------------------------------------
 1.2 - BODY COPY
 -------------------------------------------------------------- */
-#hero p {
-	text-align: left;
+blockquote, .pink-box p, .pink-box h3, .col-1-4, .pink-box header p, #shipping, #contact p, a {
+	font-weight: 100;
 }
 blockquote {
 	margin: 80px 0 80px;
-	font-size: 0.5rem;
-}
-.margin-bottom {
-	margin-bottom: 50px;
-}
-blockquote, .pink-box p, .pink-box h3, .col-1-4, .pink-box header p, #shipping {
-	font-weight: 100;
+	font-size: 0.6rem;
 }
 .pink-box p {
 	padding: 40px 45px;
@@ -84,58 +63,83 @@ blockquote, .pink-box p, .pink-box h3, .col-1-4, .pink-box header p, #shipping {
 .pink-box h3 {
 	padding-top: 80px;
 }
-.col-1-4 header p, .col-1-4, #contact p, .pink-box p {
+.col-1-4 header p, .col-1-4, #contact p, .pink-box p, .pink-box a, .col-2-6, #shipping {
 	font-size: 0.6rem;
 }
 .col-1-4 p, .col-1-4 {
 	margin-top: -7px;
 }
-.col-1-4 h3 {
-	color: black;
-	font-size: 0.8rem;
-	margin-top: -10px;
+#hero p {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	margin: 30px;
+	text-align: left;
 }
 .pink-box header p, .pink-box h3 {
 	font-size: 1rem;
 }
 .pink-box header p {
-	margin-top: -50px;
 	padding-bottom: 35px;
 }
-.pink-box a {
-	border: solid 1px white;
-	padding: 10px 28px;
-}
-.pink-box a:hover {
-	background-color: #f95a6c;
-}
 #shipping {
-	font-size: 0.5rem;
-	line-height: 25px;
+	line-height: 1rem;
 	margin: 60px 0 60px;
 }
 #about p {
 	padding-top: 120px;
 }
+#contact p {
+	padding-bottom: 30px;
+}
+a, h2, h3, #hero p, blockquote, .pink-box header p, #shipping {
+	text-transform: uppercase;
+}
+h2, h3, blockquote, .pink-box, #contact p, .col-5-8, .col-1-4 {
+	text-align: center;
+}
+h2, h3, .col-1-4 header p, .col-2-6 a {
+	color: #ee576b;
+}
+h2, h3, #hero p, .col-1-4 h3 {
+	font-weight: 800;
+}
+#hero p, .pink-box, .pink-box h3, .pink-box a, .col-1-4 a:hover, .col-2-6 a:hover {
+	color: white;
+}
 /*--------------------------------------------------------------
 1.3 - BUTTONS
 -------------------------------------------------------------- */
-
+.button-pink-box {
+	border: solid 1px white;
+	padding: 10px 28px;
+	font-size: 0.7rem;
+}
+.button-pink-box:hover {
+	background-color: white;
+	color: #f95a6c;
+}
+.button {
+	border: solid 1px #f95a6c;
+	padding: 10px 25px;
+}
+.button:hover {
+	background-color: #f95a6c;
+	color: white;
+}
 /*--------------------------------------------------------------
 1.4 - FORMS
 -------------------------------------------------------------- */
 label {
 	display: none;
 }
-form {
+.col-10-12 form {
 	padding: 30px;
 }
-.col-4-6 input {
-	width: 450px;
+input {
 	border: solid 1px #f95a6c;
 	outline: none;
 	font-size: 0.7rem;
-	height: 39px;
+	height: 41px;
 }
 input:focus {
 	outline: none;
@@ -144,15 +148,6 @@ input:focus {
  -webkit-box-shadow: 0 0 0px 1000px white inset;
  box-shadow: 0 0 0px 1000px white inset;
 }
-.col-2-6 a {
-	border: solid 1px #f95a6c;
-	padding: 7px 24px;
-	font-size: 0.7rem;
-	margin-left: -52px;
-}
-.col-4-6 form {
-	margin-left: 210px;
-}
 #contact input, textarea {
 	width: 100%;
 	margin-bottom: 10px;
@@ -160,9 +155,7 @@ input:focus {
 	border: solid 1px white;
 	background-color: transparent;
 }
-textarea {
-	margin-bottom: 50px;
-}
+
 
 
 ::-webkit-input-placeholder {
@@ -181,12 +174,12 @@ textarea {
  color: white;
 }
 /*--------------------------------------------------------------
-1.5 - LISTS
+1.5 - LISTS 
 -------------------------------------------------------------- */
-ul {
+header ul {
 	text-align: right;
-	margin-top: 42px;
 	font-size: 0.7rem;
+	margin-top: 60px;
 }
 li {
 	display: inline-block;
@@ -195,76 +188,69 @@ li {
 /*--------------------------------------------------------------
 2.0 - NAVIGATION MENUS
 -------------------------------------------------------------- */
-a {
-	text-decoration: none;
-	color: black;
-	font-weight: 100;
+.col-2-6 a {
+	border: solid 1px #f95a6c;
+	padding: 7px 24px;
+	font-size: 0.7rem;
+	margin-left: -52px;
 }
 nav a:hover, blockquote a:hover {
-	border-bottom: 1px solid #f95a6c;
+	border-bottom: solid 1px #f95a6c;
 }
 .col-1-4 a {
-	border: solid 1px #f95a6c;
-	padding: 10px 28px;
+	color: #f95a6c;
 }
-.col-1-4 a:hover, .col-2-6 a:hover, .pink-box {
-	background-color: #f95a6c;
+nav a {
+	color: black;
+}
+a {
+	text-decoration: none;
 }
 .col-1-3 a {
 	font-size: 0.6rem;
 }
 /*--------------------------------------------------------------
-4.0 - MEDIA
+2.1 - MAIN MENU
 -------------------------------------------------------------- */
-#hero {
-	background: url(../img/lekule-hero-image.jpg) no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	padding-top: 380px;
-	margin-top: -77px;
-}
-#featured-coffee {
-	background: url(../img/lekule-evening-oak.jpg) no-repeat center center;
-	min-height: 460px;
-}
-#about-pic {
-	background: url(../img/lekule-aboutus.jpg) no-repeat center center;
-}
-#facebook {
-	background-image: url(../img/lekule-facebook.png);
-	height: 23px;
-	width: 25px;
-}
-#linkedin {
-	background-image: url(../img/lekule-linkedin.png);
-	height: 23px;
-	width: 25px;
-}
-#hero, #featured-coffee, #about-pic {
-	background-size: cover;
-}
-#facebook, #linkedin, #twitter {
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	display: inline-block;
-}
-#twitter {
-	background-image: url(../img/lekule-twitter.png);
-	height: 23px;
-	width: 25px;
-}
-#linkedin:hover, #twitter:hover, #facebook:hover {
-	background-position: 0 -22px;
-}
+
 /*--------------------------------------------------------------
-5.0 - UTILITY
+2.2 - FOOTER MENU
 -------------------------------------------------------------- */
-#products {
-	margin-bottom: 80px;
+
+/*--------------------------------------------------------------
+3.0 - CONTENT
+-------------------------------------------------------------- */
+
+/*--------------------------------------------------------------
+3.1 - SITE STRUCTURE
+-------------------------------------------------------------- */
+.col-5-8 footer {
+	background-color: white;
 }
-footer, #grey-bar-one, #grey-bar-two, #grey-bar-three, #grey-bar-four {
-	background-color: #f1f2f2;
+#grey-bar-one {
+	top: 245px;
+}
+#grey-bar-two {
+	top: 89px;
+}
+#grey-bar-three {
+	top: 170px;
+}
+#grey-bar-four {
+	top: 215px;
+}
+#contact {
+	margin-top: 120px;
+	margin-bottom: 110px;
+}
+#news-letter .col-4-6 {
+	margin-left: 220px;
+}
+header .col-2-3 {
+	margin-top: 35px;
+}
+.flex form a {
+	margin-left: 318px;
 }
 .flex {
 	display: -webkit-flex;
@@ -278,34 +264,89 @@ footer, #grey-bar-one, #grey-bar-two, #grey-bar-three, #grey-bar-four {
 .parent-div {
 	position: relative;
 }
+#products {
+	margin-bottom: 80px;
+}
+.margin-bottom {
+	margin-bottom: 50px;
+}
+#about {
+	margin-bottom: 70px;
+	margin-top: 70px;
+}
+#news-letter {
+	margin-top: 130px;
+}
+footer .col-2-3 {
+	width: 20%;
+	float: right;
+}
 #grey-bar-one, #grey-bar-two, #grey-bar-three, #grey-bar-four {
 	position: absolute;
 	z-index: -1;
 	width: 100%;
 	height: 115px;
 }
-#grey-bar-one {
-	top: 245px;
-}
-#grey-bar-two {
-	top: 168px;
-}
-#grey-bar-three {
-	top: 170px;
-}
-#grey-bar-four {
-	top: 215px;
-}
-.flex form a {
-	margin-left: 260px;
-}
 /*--------------------------------------------------------------
-5.4 - ALIGNMENTS
+3.2 - TEXT UTILITY
 -------------------------------------------------------------- */
 
-#contact p {
-	padding-bottom: 30px;
+/*--------------------------------------------------------------
+4.0 - MEDIA
+-------------------------------------------------------------- */
+#hero {
+	background: url(../img/hero-image.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	padding-top: 380px;
 }
+#featured-coffee {
+	background: url(../img/evening-oak.jpg) no-repeat center center;
+	min-height: 460px;
+}
+#about-pic {
+	background: url(../img/aboutus.jpg) no-repeat center center;
+}
+#facebook {
+	background-image: url(../img/facebook.png);
+	height: 23px;
+	width: 25px;
+}
+#linkedin {
+	background-image: url(../img/linkedin.png);
+	height: 23px;
+	width: 25px;
+}
+#hero, #featured-coffee, #about-pic {
+	background-size: cover;
+}
+#facebook, #linkedin, #twitter {
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	display: inline-block;
+}
+#twitter {
+	background-image: url(../img/twitter.png);
+	height: 23px;
+	width: 25px;
+}
+#linkedin:hover, #twitter:hover, #facebook:hover {
+	background-position: 0 -22px;
+}
+/*--------------------------------------------------------------
+5.0 - UTILITY
+-------------------------------------------------------------- */
+.pink-box {
+	background-color: #f95a6c;
+}
+footer, #grey-bar-one, #grey-bar-two, #grey-bar-three, #grey-bar-four {
+	background-color: #f1f2f2;
+}
+/*--------------------------------------------------------------
+5.1 - COLUMNS
+-------------------------------------------------------------- */
+
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -327,7 +368,6 @@ img {
 }
 [class*='col-'] {
 	float: left;
-	margin-bottom: 20px;
 }
 .bg {
 	background-color: #660033;
@@ -341,11 +381,10 @@ img {
 }
 .col-1-3 {
 	width: 33.33%;
-	padding-top: 28px;
+	margin-top: 25px;
 }
 .col-2-3 {
-	width: 60%;
-	margin-top: -39px;
+	width: 66%;
 }
 .col-1-4 {
 	width: 25%;
@@ -367,11 +406,10 @@ img {
 	width: 16.6%;
 }
 .col-4-6 {
-	width: 65%;
+	width: 45%;
 }
 .col-2-6 {
-	width: 15%;
-	padding-top: 6px;
+	width: 10%;
 }
 .col-1-7 {
 	width: 14.2%;
@@ -441,7 +479,128 @@ img {
 	float: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Typography
+1.1 - Headings
+1.2 - Body Copy
+1.3 - Buttons
+1.4 - Forms
+1.5 - Lists
+
+2.0 - Navigation Menus	
+2.1 - Main Menu
+2.2 - Footer Menu
+
+3.0 - Content
+3.1 - Site Structure (Site Header, Advertisement, Site Footer)
+3.2 - Text Utility
+
+4.0 - Media
+
+5.0 - Utility
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+1.0 - TYPOGRAPHY
+-------------------------------------------------------------- */
+
+/*--------------------------------------------------------------
+1.1 - HEADINGS
+-------------------------------------------------------------- */
+h1, nav li { 
+
+text-align:center;
+}
+/*--------------------------------------------------------------
+1.2 - BODY COPY
+-------------------------------------------------------------- */
+.pink-box h3, .pink-box header p {
+	padding-top: 51px;
+	font-size: 0.55rem;
+}
+blockquote {
+	margin: 77px 60px 52px;
+	font-size: 0.45rem;
+}
+.pink-box p {
+	font-size: 0.5rem;
+	padding: 45px 23px;
+}
+#hero p {
+	font-size: 0.5rem;
+	line-height: 0.6rem;
+}
+
+
+/*--------------------------------------------------------------
+1.4 - FORMS
+-------------------------------------------------------------- */
+textarea, input {
+	width: 100%;
+}
+.col-4-6 form {
+	padding: 30px;
+	margin-left: -10px;
+}
+/*--------------------------------------------------------------
+1.5 - LISTS 
+-------------------------------------------------------------- */
+header ul {
+    margin: -100px 0 0 135px;
+}
+/*--------------------------------------------------------------
+2.0 - NAVIGATION MENUS
+-------------------------------------------------------------- */
+
+nav li a {
+	font-size: 0.5rem;
+}
+.flex form a {
+	margin-left: 170px;
+}
+.col-2-6 a {
+	padding: 7px 6px;
+	margin-left: -21px;
+}
+
+/*--------------------------------------------------------------
+3.1 - SITE STRUCTURE
+-------------------------------------------------------------- */
+
+footer .col-2-3 {
+	width: 58%;
+	float: right;
+}
+footer .col-1-3 {
+	width: 40%;
+	margin-top: 21px;
+}
+
+#news-letter .col-4-6 {
+	margin-left: 23px;
+	width: 60%;
+}
+#contact .flex {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+5.0 - UTILITY
+-------------------------------------------------------------- */
+#grey-bar-one, #grey-bar-two, #grey-bar-three, #grey-bar-four {
+	display: none;
+}
+.wrapper {
+	width: 100%;
+}
+
+#contact .col-1-2 {
+	width: 100%;
+}
 .col-1-4 {
 	width: 50%;
 }
@@ -457,6 +616,9 @@ img {
 }
 .col-2-5 {
 	width: 30%;
+}
+footer .col-1-3 {
+	margin: 0;
 }
 .col-3-5 {
 	width: 70%;
@@ -488,78 +650,14 @@ img {
 .col-10-12 {
 	width: 100%;
 }
-.grey-bar {
-	display: none;
-}
-
-footer .col-2-3 {
-	width: 81%;
-}
-#featured-coffee {
-	background: url(../img/lekule-evening-oak.jpg) no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-#about-pic {
-	background: url(../img/lekule-aboutus.jpg) no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-#contact .col-1-2 {
-	width: 100%;
-}
-textarea, input {
-	width: 100%;
-}
-.wrapper {
-	width: 100%;
-}
-ul {
-	margin: -120px 0 100px 100px;
-}
-h1 {
-	margin: 0 0 100px 70px;
-}
-#hero {
-	background: url(../img/lekule-hero-image.jpg) no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: contain;
-	margin-top: -160px;
-}
-#hero p {
-	font-size: 0.4rem;
-	margin: -140px 0 20px 0;
-	line-height: 12px;
-}
-nav li a {
-	font-size: 0.5rem;
-	text-align: center;
-}
-.pink-box h3 {
-	padding-top: 20px;
-}
-blockquote {
-	margin-top: -30px;
-}
-#grey-bar-one, #grey-bar-two, #grey-bar-three, #grey-bar-four {
-	display: none;
-}
-.col-4-6 form {
-	margin-left: -10px;
-}
-#contact .flex {
-	display: block;
-}
 #map {
 	height: 400px;
+	margin-top: 70px;
 }
-.flex form a {
-	margin-left: 170px;
+.col-2-6 {
+	width: 29%;
+}
+.col-2-3 {
+	width: 30%;
 }
 }
